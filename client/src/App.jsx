@@ -4,6 +4,7 @@ import FeaturedCourses from "./components/FeaturedCourses";
 import WhyChooseUs from "./components/WhyChooseUs";
 import CourseCategories from "./components/CourseCategories";
 import InstructorSection from "./components/InstructorSection";
+import CallToAction from "./components/CallToAction";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <WhyChooseUs />
         <CourseCategories />
         <InstructorSection />
+        <CallToAction />
       </main>
     </>
   );
