@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 import logo from "../assets/PR-learning-lab-logo.jpg";
 import "./Navbar.css";
 
@@ -56,21 +57,24 @@ function Navbar() {
           }
           aria-label="Main navigation"
         >
-          <a
-            className="navbar__link"
-            href="#home"
-            onClick={closeMenu}
+          <NavLink
+            to="/"
+            end
+            className={({ isActive }) =>
+              isActive ? "nav-link active" : "nav-link"
+            }
           >
             Home
-          </a>
+          </NavLink>
 
-          <a
-            className="navbar__link"
-            href="#courses"
-            onClick={closeMenu}
+          <NavLink
+            to="/courses"
+            className={({ isActive }) =>
+              isActive ? "nav-link active" : "nav-link"
+            }
           >
             Courses
-          </a>
+          </NavLink>
 
           <a
             className="navbar__link"

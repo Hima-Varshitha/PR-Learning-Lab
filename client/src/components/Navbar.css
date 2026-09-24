@@ -233,3 +233,36 @@
     height: 46px;
     }
 }
+
+.nav-link {
+  position: relative;
+  color: #64748b;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #2563eb;
+}
+
+.nav-link.active {
+  color: #2563eb;
+  font-weight: 700;
+}
+
+.nav-link.active::after {
+  position: absolute;
+  right: 0;
+  bottom: -10px;
+  left: 0;
+  height: 2px;
+  content: "";
+  background-color: #2563eb;
+  border-radius: 999px;
+}
+
+@media (max-width: 768px) {
+  .nav-link.active::after {
+    display: none;
+  }
+}

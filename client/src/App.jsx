@@ -1,28 +1,15 @@
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import FeaturedCourses from "./components/FeaturedCourses";
-import WhyChooseUs from "./components/WhyChooseUs";
-import CourseCategories from "./components/CourseCategories";
-import InstructorSection from "./components/InstructorSection";
-import CallToAction from "./components/CallToAction";
-import Footer from "./components/Footer";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import Courses from "./pages/Courses";
 
 function App() {
   return (
-    <>
-      <Navbar />
-
-      <main>
-        <Hero />
-        <FeaturedCourses />
-        <WhyChooseUs />
-        <CourseCategories />
-        <InstructorSection />
-        <CallToAction />
-      </main>
-
-      <Footer />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/courses" element={<Courses />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
