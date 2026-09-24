@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import FeaturedCourses from "./components/FeaturedCourses";
 import WhyChooseUs from "./components/WhyChooseUs";
+import CourseCategories from "./components/CourseCategories";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Hero />
         <FeaturedCourses />
         <WhyChooseUs />
+        <CourseCategories />
       </main>
     </>
   );
