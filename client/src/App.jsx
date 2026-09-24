@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import FeaturedCourses from "./components/FeaturedCourses";
 import WhyChooseUs from "./components/WhyChooseUs";
 import CourseCategories from "./components/CourseCategories";
+import InstructorSection from "./components/InstructorSection";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <FeaturedCourses />
         <WhyChooseUs />
         <CourseCategories />
+        <InstructorSection />
       </main>
     </>
   );
