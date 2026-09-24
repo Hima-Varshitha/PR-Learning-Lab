@@ -5,6 +5,7 @@ import WhyChooseUs from "./components/WhyChooseUs";
 import CourseCategories from "./components/CourseCategories";
 import InstructorSection from "./components/InstructorSection";
 import CallToAction from "./components/CallToAction";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
         <InstructorSection />
         <CallToAction />
       </main>
+
+      <Footer />
     </>
   );
 }
