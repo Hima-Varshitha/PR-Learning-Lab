@@ -6,6 +6,7 @@ import CourseCategories from "../components/CourseCategories";
 import InstructorSection from "../components/InstructorSection";
 import CallToAction from "../components/CallToAction";
 import Footer from "../components/Footer";
+import ScrollReveal from "../components/ScrollReveal";
 
 function Home() {
   return (
@@ -14,11 +15,26 @@ function Home() {
 
       <main>
         <Hero />
-        <FeaturedCourses />
-        <WhyChooseUs />
-        <CourseCategories />
-        <InstructorSection />
-        <CallToAction />
+
+        <ScrollReveal>
+          <FeaturedCourses />
+        </ScrollReveal>
+
+        <ScrollReveal>
+          <WhyChooseUs />
+        </ScrollReveal>
+
+        <ScrollReveal>
+          <CourseCategories />
+        </ScrollReveal>
+
+        <ScrollReveal>
+          <InstructorSection />
+        </ScrollReveal>
+
+        <ScrollReveal>
+          <CallToAction />
+        </ScrollReveal>
       </main>
 
       <Footer />

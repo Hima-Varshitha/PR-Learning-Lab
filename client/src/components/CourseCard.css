@@ -90,6 +90,33 @@
     );
 }
 
+.course-card__thumbnail--marketing {
+  background:
+    linear-gradient(
+      135deg,
+      #0f766e,
+      #134e4a
+    );
+}
+
+.course-card__thumbnail--ai {
+  background:
+    linear-gradient(
+      135deg,
+      #4338ca,
+      #312e81
+    );
+}
+
+.course-card__thumbnail--illustrator {
+  background:
+    linear-gradient(
+      135deg,
+      #c2410c,
+      #7c2d12
+    );
+}
+
 .course-card__short-name {
   position: relative;
   z-index: 2;

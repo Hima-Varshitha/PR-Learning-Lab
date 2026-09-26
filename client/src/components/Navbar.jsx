@@ -7,7 +7,7 @@ function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   function toggleMenu() {
-    setIsMenuOpen(!isMenuOpen);
+    setIsMenuOpen((currentState) => !currentState);
   }
 
   function closeMenu() {
@@ -17,10 +17,12 @@ function Navbar() {
   return (
     <header className="navbar">
       <div className="container navbar__container">
-        <a
+
+        <NavLink
           className="navbar__brand"
-          href="#home"
+          to="/"
           onClick={closeMenu}
+          aria-label="PR Learning Lab home"
         >
           <img
             className="navbar__logo-image"
@@ -31,7 +33,7 @@ function Navbar() {
           <span className="navbar__brand-text">
             PR Learning Lab
           </span>
-        </a>
+        </NavLink>
 
         <button
           className="navbar__menu-button"
@@ -60,8 +62,11 @@ function Navbar() {
           <NavLink
             to="/"
             end
+            onClick={closeMenu}
             className={({ isActive }) =>
-              isActive ? "nav-link active" : "nav-link"
+              isActive
+                ? "navbar__link navbar__link--active"
+                : "navbar__link"
             }
           >
             Home
@@ -69,8 +74,11 @@ function Navbar() {
 
           <NavLink
             to="/courses"
+            onClick={closeMenu}
             className={({ isActive }) =>
-              isActive ? "nav-link active" : "nav-link"
+              isActive
+                ? "navbar__link navbar__link--active"
+                : "navbar__link"
             }
           >
             Courses
@@ -78,7 +86,7 @@ function Navbar() {
 
           <a
             className="navbar__link"
-            href="#about"
+            href="/#about"
             onClick={closeMenu}
           >
             About
